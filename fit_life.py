@@ -6,7 +6,7 @@ ML_PER_L = 1000
 
 print('Добро пожаловать в FitLife!')
 
-user_name = input('Ваше имя:')
+user_name = input('Ваше имя:').title()
 user_age = int(input('Ваш возраст:'))
 user_weight = float(input('Ваш вес:'))
 user_height = float(input('Ваш рост в метрах, используя точку (1.75):'))
@@ -21,7 +21,7 @@ water_l = water_ml / ML_PER_L
 water_round = round(water_l, 1)
 
 print()
-print(f'Отчёт для пользователя: {user_name.title()}', end="")
+print(f'Отчёт для пользователя: {user_name}', end="")
 print(f' ({user_age} г.)')
 print(f'Твой индекс массы тела: {bmi_round}')
 print(f'Рекомендуемая норма воды: {water_round} л. в день')
