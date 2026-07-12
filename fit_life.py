@@ -21,7 +21,8 @@ water_l = water_ml / ML_PER_L
 water_round = round(water_l, 1)
 
 print()
-print(f'Отчёт для пользователя: {user_name.title()} ({user_age} г.)')
+print(f'Отчёт для пользователя: {user_name.title()}', end="")
+print(f' ({user_age} г.)')
 print(f'Твой индекс массы тела: {bmi_round}')
 print(f'Рекомендуемая норма воды: {water_round} л. в день')
 print()
